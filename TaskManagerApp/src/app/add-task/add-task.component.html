@@ -1,0 +1,29 @@
+<div class="container rounded-2 mt-5" style="width: 60%;">
+    <form style="width: 70%;" [formGroup]="TaskForm" (ngSubmit)="addTask()">
+        <h4>Add Task</h4>
+        <hr>
+        <div class="form-floating mb-3">
+
+            <input type="text" [formControl]="$any(TaskForm.controls['title'])" id="title" class="form-control"
+                name="title" placeholder="title">
+            <label for="">title</label>
+            <div *ngIf="TaskForm.get('title')?.hasError('required') && TaskForm.get('title')?.touched"
+                class="text-danger">Please
+                Enter Title</div>
+        </div>
+        <div class="form-floating mb-3">
+
+            <input type="text" [formControl]="$any(TaskForm.controls['description'])" class="form-control"
+                id="description" name="description" placeholder="description">
+            <label>Description</label>
+            <div class="text-danger"
+                *ngIf="TaskForm.get('description')?.hasError('required') && TaskForm.get('description')?.touched">Please
+                Enter description</div>
+        </div>
+        <div class=" text-end">
+            <button type="button" class="btn btn-secondary me-2" (click)="cancel()"><i class="fa fa-arrow-left"></i>  Back</button>
+            <button type="submit" class="btn btn-info mt-3 mb-3" [disabled]="!TaskForm.valid">Add</button>
+        </div>
+        <hr>
+    </form>
+</div>

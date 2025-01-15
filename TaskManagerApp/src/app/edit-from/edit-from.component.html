@@ -1,0 +1,16 @@
+@if (task) {
+
+<div class="container rounded-2 mt-5" style="border: 1px solid rgba(128, 128, 128, 0.358); width: 40rem;">
+    <form style="width: 80%;" (ngSubmit)="updateTask()">
+        <h5 class="mt-4">Title</h5>
+        <input type="text" class="form-control" name="title" [(ngModel)]="task.title">
+        <h5 class="mt-4">Description</h5>
+        <input type="text" class="form-control" name="description" [(ngModel)]="task.description">
+        <div class="text-end">
+            <button type="button" class="btn btn-secondary me-2" (click)="cancel()"><i class="fa fa-arrow-left"></i> Back</button>
+            <button type="submit" class="btn btn-info mt-3 mb-3">Save Changes</button>
+
+        </div>
+    </form>
+</div>
+}

@@ -1,0 +1,22 @@
+
+<div class="container" style="width: 90%;">
+    
+    <hr>
+    <div class="d-flex justify-content-between">
+        <h3>{{task.title}}</h3>
+        <p class="border p-2 mb-2 text-white rounded-3" [class.bg-success]="task.isCompleted"
+            [class.bg-danger]="!task.isCompleted">
+            {{task.isCompleted?"Completed":"Pending"}}</p>
+    </div>
+
+    <hr>
+    <div>
+        <h5>Description</h5>
+        <p class="border border-success p-2 mb-2 border-opacity-50">{{task.description}}</p>
+        <div class="text-end mt-3">
+            <button class="btn btn-secondary me-2" routerLink=""><i class="fa fa-arrow-left"></i>  Back</button>
+            <button class="btn btn-info" [disabled]="task.isCompleted" (click)="markComplete()">Mark As
+                Complete</button>
+        </div>
+    </div>
+</div>

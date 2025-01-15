@@ -1,0 +1,44 @@
+@if (tasks().length === 0) {
+    <div class="mt-5 container text-center">
+        <h4>No Task Available!</h4>
+    </div>
+}@else {
+    
+
+
+<div class="mt-5 d-flex justify-content-between">
+    <h4>Task List</h4>
+    <button class="btn btn-success" routerLink="/add-task">Add <i class="fa fa-plus"></i></button>
+</div>
+<hr>
+
+<table class="table table-hover table-striped">
+
+    <thead style="font-size: larger ;">
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Status</th>
+        <th scope="col">Buttons</th>
+    </thead>
+    <tbody>
+
+        @for (task of tasks(); track $index) {
+        <tr routerLink="/task/{{task.id}}" scope="row">
+            <td>{{task.id}}</td>
+            <td>{{task.title}}</td>
+            <td>{{task.isCompleted? "Completed" : "Pending"}}</td>
+            <td>
+                <div class="btn-group me-2 p-1" (click)="$event.stopPropagation()">
+                    <button class="btn" routerLink="edit-task/{{task.id}}" tooltip="Edit" [delay]="250">
+                        <i class="fa fa-edit fa-lg"></i></button>
+                    <button class="btn" (click)="deleteTask(task.id)" tooltip="Delete" [delay]="250"><i class="fa fa-trash fa-lg" ></i></button>
+                    <button class="btn" [disabled]="task.isCompleted" (click)="markComplete(task.id)" tooltip="Mark As Complete" [delay]="250"><i
+                            class="fa fa-check-circle fa-lg"></i></button>
+                </div>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+}
