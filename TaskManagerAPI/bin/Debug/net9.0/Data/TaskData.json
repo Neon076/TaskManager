@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "Title": "Complete Assignment",
+    "Description": "Finish the math assignment before the deadline.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 2,
+    "Title": "Grocery Shopping",
+    "Description": "Buy vegetables, fruits, and dairy products.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 3,
+    "Title": "Workout",
+    "Description": "Complete a 30-minute workout session.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 4,
+    "Title": "Read Book",
+    "Description": "Read 20 pages of the novel.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 5,
+    "Title": "Team Meeting",
+    "Description": "Attend the weekly team meeting at 10 AM.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 6,
+    "Title": "Call Mom",
+    "Description": "Catch up with mom over a call.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 7,
+    "Title": "Fix Bug",
+    "Description": "Resolve the reported issue in the login module.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 8,
+    "Title": "Pay Bills",
+    "Description": "Pay electricity and water bills online.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 9,
+    "Title": "Plan Vacation",
+    "Description": "Research and plan the upcoming vacation itinerary.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 10,
+    "Title": "Review PR",
+    "Description": "Review the pull request submitted by the team.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 11,
+    "Title": "Laundry",
+    "Description": "Sort and wash clothes.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 12,
+    "Title": "Study",
+    "Description": "Study for the upcoming certification exam.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 13,
+    "Title": "Prepare Presentation",
+    "Description": "Create slides for the client meeting.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 14,
+    "Title": "Water Plants",
+    "Description": "Water all indoor and outdoor plants.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 15,
+    "Title": "Car Service",
+    "Description": "Take the car to the service center.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 16,
+    "Title": "Write Blog Post",
+    "Description": "Draft a blog post on the latest tech trends.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 17,
+    "Title": "Organize Files",
+    "Description": "Clean up and organize desktop files.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 18,
+    "Title": "Respond to Emails",
+    "Description": "Reply to all pending work emails.",
+    "IsCompleted": false
+  },
+  {
+    "Id": 19,
+    "Title": "Meditate",
+    "Description": "Meditate for 15 minutes to relax.",
+    "IsCompleted": true
+  },
+  {
+    "Id": 20,
+    "Title": "Update Resume",
+    "Description": "Add recent projects and achievements to the resume.",
+    "IsCompleted": false
+  }
+]

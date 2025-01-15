@@ -144,3 +144,5 @@ D:\AngularAndAspnet\TaskManager\TaskManagerAPI\obj\Debug\net9.0\TaskManagerAPI.p
 D:\AngularAndAspnet\TaskManager\TaskManagerAPI\obj\Debug\net9.0\TaskManagerAPI.genruntimeconfig.cache
 D:\AngularAndAspnet\TaskManager\TaskManagerAPI\obj\Debug\net9.0\ref\TaskManagerAPI.dll
 D:\AngularAndAspnet\TaskManager\TaskManagerAPI\bin\Debug\net9.0\AutoMapper.dll
+D:\AngularAndAspnet\TaskManager\TaskManagerAPI\obj\Debug\net9.0\TaskManagerAPI.sourcelink.json
+D:\AngularAndAspnet\TaskManager\TaskManagerAPI\bin\Debug\net9.0\Data\TaskData.json
